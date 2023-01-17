@@ -21,5 +21,9 @@ except:
 sum1 = driver.find_element("id", "sum1")
 sum2 = driver.find_element("id", "sum2")
 
-sum1.send_keys(15)
+sum1.send_keys(Keys.NUMPAD1, Keys.NUMPAD5)
 sum2.send_keys(15)
+
+btn = driver.find_element("css selector", "button[onclick='return total()']")
+# https: // www.w3schools.com/cssref/css_selectors.php
+btn.click()
